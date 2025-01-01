@@ -5,8 +5,8 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
     :root {
-        --primary: #ffba19;
-        --primaryLight: #ffd675;
+        --primary: #00e6c3;
+        --primaryLight: #00e6c3;
         --secondary: #001f3f;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
@@ -66,6 +66,7 @@
         transition: color 0.3s;
         transition-delay: 0.1s;
         text-align: center;
+        border-radius: 8px;
     }
     .cs-button-solid:hover {
         color: #fff;
