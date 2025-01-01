@@ -167,6 +167,7 @@
         line-height: clamp(2.875em, 5.5vw, 3.5em);
         font-weight: 700;
         color: #fff;
+        border-radius: 8px;
     }
     #hero .cs-button-transparent .cs-img {
         display: block;
