@@ -62,11 +62,10 @@
         font-size: 1rem;
         line-height: 3.125em;
         font-weight: bold;
-        color: #39175d;
+        color: #000;
         transition: color 0.3s;
         transition-delay: 0.1s;
         text-align: center;
-        border-radius: 8px;
     }
     .cs-button-solid:hover {
         color: #fff;
