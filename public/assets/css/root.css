@@ -62,7 +62,7 @@
         font-size: 1rem;
         line-height: 3.125em;
         font-weight: bold;
-        color: #000;
+        color: #39175d;
         transition: color 0.3s;
         transition-delay: 0.1s;
         text-align: center;
@@ -82,7 +82,7 @@
         content: "";
         opacity: 1;
         display: block;
-        background-color: #000;
+        background-color: #39175d;
         height: 100%;
         width: 0;
         transition: width 0.3s;
