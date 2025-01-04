@@ -859,9 +859,11 @@
     body.dark-mode #cs-navigation {
         background-color: var(--dark);
     }
-    body.dark-mode #cs-navigation .cs-logo {
+    body.dark-mode #cs-navigation .cs-logo img {
         /* makes it turn white */
-        filter: grayscale(1) brightness(1000%);
+        filter: grayscale(1) brightness(800%);
+        /* background-image: url("src/assets/svgs/spkLogo_Dark.svg"); */
+        /* content: url("src/assets/svgs/spkLogo_Dark.svg"); */
     }
     body.dark-mode #cs-navigation .cs-li-link {
         color: var(--bodyTextColorWhite);
