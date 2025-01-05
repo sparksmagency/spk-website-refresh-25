@@ -426,6 +426,23 @@
         height: 39.3125em;
         width: 26.25em;
     }
+    #gallery .image-showcase {
+        overflow: hidden;
+        position: relative;
+        /* border: 2px solid #b3b3b3; */
+        border-radius: 1px;
+        margin: 0 auto;
+    }
+    #gallery .image-showcase img {
+        bottom: -1210px;
+        width: 100%;
+        height: auto;
+        /* position: absolute; */
+    }
+    #gallery .image-showcase:hover img {
+        transform: translateY(-300px);
+        transition: all 1s ease-in-out;
+    }
 }
 /* Dark mode */
 @media only screen and (min-width: 0rem) {
