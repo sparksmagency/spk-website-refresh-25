@@ -532,12 +532,12 @@
 }
 
 /*-- -------------------------- -->
-<---          Reviews           -->
+<---          Case Studies           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #reviews {
+    #Case Studies {
         padding: var(--sectionPadding);
         /* Centers the button */
         text-align: center;
@@ -639,7 +639,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #reviews {
+    #Case Studies {
         .cs-card-group {
             display: flex;
             justify-content: space-between;
@@ -657,7 +657,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #reviews {
+        #Case Studies {
             .cs-title,
             .cs-text,
             .cs-item-p,

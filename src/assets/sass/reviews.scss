@@ -1,12 +1,12 @@
-/* PAGE-SPECIFIC STYLES FOR THE REVIEWS PAGE */
+/* PAGE-SPECIFIC STYLES FOR THE Case Studies PAGE */
 
 /*-- -------------------------- -->
-<---           Reviews          -->
+<---           Case Studies          -->
 <--- -------------------------- -*/
 
 /* Mobile */
 @media only screen and (min-width: 0rem) {
-    #reviews {
+    #Case Studies {
         margin: auto;
         padding-top: calc(120 / 16 * 1rem);
         padding-bottom: calc(50 / 16 * 1rem);
@@ -87,7 +87,7 @@
 
 /* Tablet */
 @media only screen and (min-width: 48rem) {
-    #reviews {
+    #Case Studies {
         padding-top: calc(150 / 16 * 1rem);
         padding-bottom: calc(50 / 16 * 1rem);
 
@@ -114,7 +114,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #reviews {
+        #Case Studies {
             .review {
                 background: var(--medium);
 
