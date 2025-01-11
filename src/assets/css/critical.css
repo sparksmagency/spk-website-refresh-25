@@ -109,7 +109,7 @@
             rgba(250, 251, 252, 0) 100%
         ); /* Chrome10-25,Safari5.1-6 */
         height: 100%;
-        width: 1px;
+        /* width: 1px; */
     }
     #hero .cs-flex-group {
         display: flex;
@@ -222,7 +222,7 @@
             rgba(250, 251, 252, 0.5) 100%
         ); /* Chrome10-25,Safari5.1-6 */
         height: 100%;
-        width: 1px;
+        /* width: 1px; */
     }
     #hero .cs-button-solid {
         margin-right: 1.25rem;
