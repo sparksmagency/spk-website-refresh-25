@@ -11,3 +11,12 @@
 11. fix title + sub for review section
 12. fix left section of footer
 13. Add content to rightmost section
+
+.cs-title {
+margin-bottom: calc(40 / 16 _ 1rem);
+max-width: calc(621 / 16 _ 1rem);
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+display: block; /_ Ensures it's treated as a block-level element _/
+}
