@@ -38,6 +38,16 @@
         object-fit: cover;
     }
 
+    #hero .video-overlay {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
     #hero .cs-picture img {
         position: absolute;
         top: 0;
@@ -62,6 +72,7 @@
         /* prevents the cursor from interacting with it */
         pointer-events: none;
     }
+
     #hero .cs-container {
         position: relative;
         margin: auto;
@@ -91,7 +102,7 @@
             rgba(250, 251, 252, 0) 100%
         ); /* Chrome10-25,Safari5.1-6 */
         height: 100%;
-        width: 1px;
+        /* width: 1px; */
     }
     #hero .cs-flex-group {
         display: flex;
@@ -203,7 +214,7 @@
             rgba(250, 251, 252, 0.5) 100%
         ); /* Chrome10-25,Safari5.1-6 */
         height: 100%;
-        width: 1px;
+        /* width: 1px; */
     }
     #hero .cs-button-solid {
         margin-right: 1.25rem;
