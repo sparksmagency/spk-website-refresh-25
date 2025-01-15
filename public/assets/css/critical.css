@@ -16,16 +16,7 @@
         /* Centers button */
         text-align: center;
     }
-    #hero .cs-picture {
-        z-index: -2;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        height: 100%;
-        /* Background Image */
-        width: 100%;
-    }
+
     #hero .cs-video {
         z-index: -2;
         position: absolute;
@@ -33,7 +24,6 @@
         left: 0;
         display: block;
         height: 100%;
-        /* Background Image */
         width: 100%;
         object-fit: cover;
     }
@@ -48,6 +38,16 @@
         background-color: rgba(0, 0, 0, 0.7);
     }
 
+    #hero .cs-picture {
+        z-index: -2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        /* Background Image */
+        width: 100%;
+    }
     #hero .cs-picture img {
         position: absolute;
         top: 0;
@@ -72,7 +72,6 @@
         /* prevents the cursor from interacting with it */
         pointer-events: none;
     }
-
     #hero .cs-container {
         position: relative;
         margin: auto;
@@ -102,7 +101,7 @@
             rgba(250, 251, 252, 0) 100%
         ); /* Chrome10-25,Safari5.1-6 */
         height: 100%;
-        /* width: 1px; */
+        width: 1px;
     }
     #hero .cs-flex-group {
         display: flex;
@@ -214,7 +213,7 @@
             rgba(250, 251, 252, 0.5) 100%
         ); /* Chrome10-25,Safari5.1-6 */
         height: 100%;
-        /* width: 1px; */
+        width: 1px;
     }
     #hero .cs-button-solid {
         margin-right: 1.25rem;
@@ -224,7 +223,7 @@
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25em) {
     #hero {
-        /* background: url("/assets/videos/v1.mp4"); */
+        background: url("/assets/images/landing.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
