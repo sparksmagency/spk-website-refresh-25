@@ -11,6 +11,7 @@
 11. fix title + sub for review section
 12. fix left section of footer
 13. Add content to rightmost section
+14. Optimize all assets for performance
 
 Business swatch
 spk-blue #00e6c3
