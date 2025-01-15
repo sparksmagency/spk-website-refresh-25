@@ -55,6 +55,26 @@
             }
         }
 
+        .cs-video {
+            z-index: -2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .video-overlay {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
         .cs-container {
             position: relative;
             margin: auto;
