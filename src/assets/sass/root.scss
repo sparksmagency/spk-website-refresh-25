@@ -1211,13 +1211,13 @@
         margin-top: calc(100 / 16 * 1rem);
         .container {
             margin: auto;
-            width: 90.0625%;
+            width: 100%;
         }
 
         picture {
             left: 50%;
             transform: translateX(-50%);
-            width: 90.0625%;
+            width: 100%;
 
             &:before {
                 z-index: 1;
