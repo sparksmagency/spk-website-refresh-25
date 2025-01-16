@@ -118,6 +118,7 @@
   }
   #sbs .cs-button-solid {
     margin-top: 2rem;
+    border-radius: 8px;
   }
 }
 /* Desktop - 1024px */

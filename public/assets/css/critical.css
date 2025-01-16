@@ -126,6 +126,7 @@
     margin-bottom: 1rem;
     height: initial;
     line-height: clamp(2.875em, 5.5vw, 3.5em);
+    border-radius: 8px;
   }
   #hero .cs-button-transparent {
     z-index: 1;
@@ -147,6 +148,7 @@
     line-height: clamp(2.875em, 5.5vw, 3.5em);
     font-weight: 700;
     color: #fff;
+    border-radius: 8px;
   }
   #hero .cs-button-transparent .cs-img {
     display: block;
@@ -197,6 +199,7 @@
   #hero .cs-button-solid {
     margin-right: 1.25rem;
     margin-bottom: 0;
+    border-radius: 8px;
   }
 }
 /* Desktop Parallax Effect - 1300px */
