@@ -429,6 +429,11 @@
     width: 26.25em;
   }
 }
+@media (max-width: 600px) {
+  #gallery .cs-image-group {
+    display: none !important; /* Forces the style to override any others */
+  }
+}
 /* Dark mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #gallery .cs-title {
@@ -505,6 +510,8 @@
     top: -2.5rem;
     height: 5rem;
     width: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #reviews .cs-item-p {
     border-bottom: 1px solid #e8e9ec;
