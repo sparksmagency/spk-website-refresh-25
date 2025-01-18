@@ -528,9 +528,15 @@
         }
     }
 }
-
+// Hide desktop gallery
 @media (max-width: 600px) {
     #gallery .cs-image-group {
+        display: none !important; /* Forces the style to override any others */
+    }
+}
+// Hide mobile gallery
+@media (min-width: 600px) {
+    #gallery .gallery-mobile {
         display: none !important; /* Forces the style to override any others */
     }
 }
