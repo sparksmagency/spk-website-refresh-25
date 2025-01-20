@@ -545,8 +545,14 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     #gallery .cs-image-group {
+        display: none !important; /* Forces the style to override any others */
+    }
+}
+
+@media (min-width: 600px) {
+    #gallery-mobile .gal-row-mobile {
         display: none !important; /* Forces the style to override any others */
     }
 }
