@@ -428,6 +428,20 @@
     height: 39.3125em;
     width: 26.25em;
   }
+  #gallery-mobile .gal-row-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  #gallery-mobile .gal-col-mobile {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #gallery-mobile .gal-col-mobile img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
 }
 @media (max-width: 600px) {
   #gallery .cs-image-group {
