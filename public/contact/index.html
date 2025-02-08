@@ -369,147 +369,536 @@
 
         <main id="main">
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                   CONTACT FORM                    -->
     <!-- ============================================ -->
-
-    <section id="int-hero">
-        <h1 id="home-h">
-            Get a Custom Digital Marketing Strategy Tailored to Your Business
-            Goals
-        </h1>
-        <picture>
-            <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/cabinets2-m.jpg"
-            />
-            <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/cabinets2.jpg"
-            />
-            <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/images/cabinets2.jpg"
-                alt="kitchen cabinets"
-                loading="eager"
-                width="2500"
-                height="1667"
-            />
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
-
-    <section id="cs-contact">
+    <section id="contact-1700">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ridiculus elementum ullamcorper ipsum porttitor aliquam.
-                        Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
+            <div class="cs-content">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">
+                    Stitch's Center for Process Safety Training
+                </h2>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quia voluptates corporis eligendi dolorem hic placeat ipsam
+                    a illo eaque, perspiciatis aspernatur omnis praesentium
+                    modi? Culpa vitae eos obcaecati tempora inventore. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                    accusamus ex eveniet, rerum magnam qui?
+                </p>
+                <div class="cs-author">
+                    <picture class="cs-profile">
+                        <img
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot1.jpeg"
+                            alt="profile"
+                            width="35"
+                            height="40"
+                            loading="lazy"
+                            decoding="async"
+                            aria-hidden="true"
+                        />
+                    </picture>
+                    <div class="cs-flex-group">
+                        <img
+                            class="cs-signature"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-signature.png"
+                            alt="founder's signature"
+                            height="52"
+                            width="52"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <span class="cs-job">Founder of Yokoloko</span>
+                    </div>
                 </div>
-                <label>
-                    Name
+            </div>
+            <!--Form-->
+            <form
+                class="cs-form"
+                id="cs-form-1700"
+                name="Contact Form"
+                method="post"
+            >
+                <div class="cs-content">
+                    <span class="cs-topper">Contact Us</span>
+                    <h2 class="cs-title">Let's Collaborate</h2>
+                </div>
+                <label class="cs-label">
+                    Name *
                     <input
+                        class="cs-input"
                         required
                         type="text"
-                        id="name"
+                        id="name-1700"
                         name="name"
                         placeholder="Name"
                     />
                 </label>
-                <label>
-                    Email
+                <label class="cs-label">
+                    Email *
                     <input
+                        class="cs-input"
                         required
-                        type="text"
-                        id="email"
+                        type="email"
+                        id="email-1700"
                         name="email"
                         placeholder="Email"
                     />
                 </label>
-                <label>
+                <label class="cs-label">
                     Phone
                     <input
-                        required
-                        type="text"
-                        id="phone"
+                        class="cs-input"
+                        type="number"
+                        id="phone-1700"
                         name="phone"
                         placeholder="Phone"
                     />
                 </label>
-                <label>
-                    How Did You Find Us
-                    <input
-                        type="text"
-                        id="find"
-                        name="find-us"
-                        placeholder="How did you find us?"
-                    />
-                </label>
-                <label class="cs-label-message">
-                    Message
+                <label class="cs-label">
+                    Message *
                     <textarea
+                        class="cs-input cs-textarea"
                         required
                         name="Message"
-                        id="message"
-                        placeholder="Write message..."
+                        id="message-1700"
+                        placeholder="Message"
                     ></textarea>
                 </label>
-                <button class="cs-button-solid" type="submit">
-                    Submit Message
+                <button class="cs-button-solid cs-submit" type="submit">
+                    Schedule Consultation
                 </button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:help@codestitch.app"
-                    >help@codestitch.app</a
-                >
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:555-779-4407"
-                    >(555) 779-4407</a
-                >
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="https://goo.gl/maps/UAQn4vuGDiwv7DV39">
-                    First Address Line,
-                    <br />
-                    Second Address Line,
-                    <br />
-                    <span class="cs-block">
-                        Denver
-                        CO
-                        80206
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-building.png
+                        "
+                    />
+                    <!--Tablet and above Image-->
                     <source
                         media="(min-width: 601px)"
-                        srcset="/assets/images/skyscraper.jpg"
+                        srcset="
+                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-building.png
+                        "
                     />
                     <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/skyscraper.jpg"
-                        alt="building"
                         loading="lazy"
-                        width="2500"
-                        height="1667"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-building.png"
+                        alt="wind turbine"
+                        width="650"
+                        height="613"
                     />
                 </picture>
-            </div>
+            </form>
         </div>
     </section>
+
+    <!-- ============================================ -->
+    <!--                    CONTACt BENEFITS FW                  -->
+    <!-- ============================================ -->
+
+    <section id="services-1622">
+        <div class="cs-container">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <img
+                            class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-circle-check.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="icon"
+                            width="48"
+                            height="48"
+                            aria-hidden="true"
+                        />
+                        <h3 class="cs-h3">100% Success Rate</h3>
+                        <p class="cs-item-text">
+                            Highly experienced staff of more than 100
+                            professionals averaging 29+ years in industry and
+                            hands-on knowledge.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <img
+                            class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-speedometer.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="icon"
+                            width="48"
+                            height="48"
+                            aria-hidden="true"
+                        />
+                        <h3 class="cs-h3">Expert Legal Services</h3>
+                        <p class="cs-item-text">
+                            Highly experienced staff of more than 100
+                            professionals averaging 29+ years in industry and
+                            hands-on knowledge.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <img
+                            class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-bouy.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="icon"
+                            width="48"
+                            height="48"
+                            aria-hidden="true"
+                        />
+                        <h3 class="cs-h3">Business Strategy</h3>
+                        <p class="cs-item-text">
+                            Highly experienced staff of more than 100
+                            professionals averaging 29+ years in industry and
+                            hands-on knowledge.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <img
+                            class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-thumb.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="icon"
+                            width="48"
+                            height="48"
+                            aria-hidden="true"
+                        />
+                        <h3 class="cs-h3">Highly Recommend</h3>
+                        <p class="cs-item-text">
+                            Highly experienced staff of more than 100
+                            professionals averaging 29+ years in industry and
+                            hands-on knowledge.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   CONTACT SERVICES                   -->
+    <!-- ============================================ -->
+
+    <section id="services-1629">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Our Services</span>
+                    <h2 class="cs-title">
+                        Grow Your Business with Our New Bold Agency
+                    </h2>
+                </div>
+                <p class="cs-text">
+                    Aqestic recusandae laudantium optio amet a quisquam saepe
+                    aliquid, voluptate praesentium dicta fuga dolor error
+                    perspiciatis voluptatem eum cupiditate totam reiciendis quam
+                    minus inventore sint rem impedit esse quasi Tenetur sed
+                    reprehenderit earum a magni aliquid blanditiis dolores,
+                    veritatis soluta autem beatae officia expedita ipsum rerum
+                    doloribus sit provident delectus.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chat-gold.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                            aria-hidden="true"
+                        />
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Answer a Few Questions</h3>
+                        <p class="cs-item-text">
+                            We welcome and celebrate different perspectives to
+                            help our firm, our clients and our people adip
+                            iscing elit achieve.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/call-gold.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                            aria-hidden="true"
+                        />
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Complimentary Call</h3>
+                        <p class="cs-item-text">
+                            We welcome and celebrate different perspectives to
+                            help our firm, our clients and our people adip
+                            iscing elit achieve.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/money-gold.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                            aria-hidden="true"
+                        />
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Grow Your Wealth</h3>
+                        <p class="cs-item-text">
+                            We welcome and celebrate different perspectives to
+                            help our firm, our clients and our people adip
+                            iscing elit achieve.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dollar-gold.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                            aria-hidden="true"
+                        />
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Financial Consultants</h3>
+                        <p class="cs-item-text">
+                            We welcome and celebrate different perspectives to
+                            help our firm, our clients and our people adip
+                            iscing elit achieve.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/layer-gold.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                            aria-hidden="true"
+                        />
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Brand Amplify Strategies</h3>
+                        <p class="cs-item-text">
+                            We welcome and celebrate different perspectives to
+                            help our firm, our clients and our people adip
+                            iscing elit achieve.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chart-GOLD.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="icon"
+                            width="32"
+                            height="32"
+                            aria-hidden="true"
+                        />
+                    </picture>
+                    <!-- Text Grouped For Flexbox-->
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Growth Catalyst Solutions</h3>
+                        <p class="cs-item-text">
+                            We welcome and celebrate different perspectives to
+                            help our firm, our clients and our people adip
+                            iscing elit achieve.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <a href="" class="cs-button-solid">View All Services</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  CONTACT REVIEWS                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews-1832">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Testimonials</span>
+                <h2 class="cs-title">Our Members Testimonials</h2>
+            </div>
+            <div class="cs-flex-group">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source
+                            media="(max-width: 600px)"
+                            srcset="
+                                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/reviewer.png
+                            "
+                        />
+                        <!--Tablet and above Image-->
+                        <source
+                            media="(min-width: 601px)"
+                            srcset="
+                                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/reviewer.png
+                            "
+                        />
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/reviewer.png"
+                            alt="person"
+                            width="570"
+                            height="680"
+                        />
+                    </picture>
+
+                    <!--White SVG Mask. Download the image and change the fill color to match the color of the section background below it-->
+                    <img
+                        class="cs-mask cs-light"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-paint-stroke.svg"
+                        alt="white splatter"
+                        width="700"
+                        height="666"
+                    />
+                    <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+                    <img
+                        class="cs-mask cs-dark"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-paint-stroke.svg"
+                        alt="white splatter"
+                        width="700"
+                        height="666"
+                    />
+                </div>
+                <div class="cs-review-group">
+                    <!--Stars-->
+                    <img
+                        class="cs-stars"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
+                        alt="quotes"
+                        width="97"
+                        height="80"
+                        aria-hidden="true"
+                    />
+                    <p class="cs-review-text">
+                        ”Great gym! A new gym with modern equipment and
+                        facilities makes training so much easier. Always willing
+                        to help you with your training”
+                    </p>
+                    <span class="cs-name">Britney Allison</span>
+                    <span class="cs-job">Founder of Yokoloko</span>
+                    <!--Quote-->
+                    <img
+                        class="cs-quote"
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-quote.svg"
+                        alt="quotes"
+                        width="97"
+                        height="80"
+                        aria-hidden="true"
+                    />
+                </div>
+            </div>
+        </div>
+        <!--Texture Graphic-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source
+                media="(max-width: 1023px)"
+                srcset="
+                    https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture-m.png
+                "
+            />
+            <!--Tablet and above Image-->
+            <source
+                media="(min-width: 1024px)"
+                srcset="
+                    https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png
+                "
+            />
+            <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png"
+                alt="dotted texture"
+                width="1920"
+                height="600"
+            />
+        </picture>
+    </section>
+
+    <!-- Subheadline -->
+
+    <!-- form  -->
+
+    <!-- trust  -->
+
+    <!-- FAQ Section  -->
+
+    <!-- ============================================ -->
+    <!--                Benefits/Why Choose Us        -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!--                Trust Signal                  -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!--                Call to action                  -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!--                FAQ                 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!--                Closing CTA                  -->
+    <!-- ============================================ -->
 </main>
         <!-- ============================================ -->
 <!--                   Footer                     -->
