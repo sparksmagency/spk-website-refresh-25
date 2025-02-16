@@ -371,225 +371,514 @@
 
         <main id="main">
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Project One Gallery</h1>
-        <picture>
-            <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/cabinets2-m.jpg"
+    <section id="hero-855">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Modern and Professional</span>
+                <h1 class="cs-title">Physical Therapy & Health and Wellness</h1>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Temporibus unde id saepe quo. Est, ea! Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Id, provident? Lorem
+                    ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <a href="" class="cs-button-solid">Schedule An Appointment</a>
+            </div>
+            <!--Hero Image-->
+            <picture class="cs-picture">
+                <!--Mobile-->
+                <source
+                    media="(max-width: 600px)"
+                    srcset="
+                        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg
+                    "
+                />
+                <!--Tablet-->
+                <source
+                    media="(min-width: 601px)"
+                    srcset="
+                        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg
+                    "
+                />
+                <!--Desktop-->
+                <source
+                    media="(min-width: 1024px)"
+                    srcset="
+                        https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg
+                    "
+                />
+                <img
+                    aria-hidden="true"
+                    decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg"
+                    alt="therapy"
+                    width="570"
+                    height="701"
+                />
+            </picture>
+        </div>
+        <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+        <svg
+            class="cs-wave"
+            width="1920"
+            height="179"
+            viewBox="0 0 1920 179"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z"
+                fill="white"
             />
-            <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/cabinets2.jpg"
-            />
-            <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/images/cabinets2.jpg"
-                alt="kitchen cabinets"
-                loading="eager"
-                width="2500"
-                height="1667"
-            />
-        </picture>
+        </svg>
     </section>
 
     <!-- ============================================ -->
-    <!--                   Gallery                    -->
+    <!--                  Services                    -->
     <!-- ============================================ -->
 
-    <section id="gallery">
+    <section id="services-1378">
         <div class="cs-container">
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <picture class="cs-picture cs-picture1">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port1-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port1.jpg"
-                        />
+            <div class="cs-content">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">
+                    We’re Commited to Deliver Top High Quality Services
+                </h2>
+                <p class="cs-text">
+                    We specialize in small business web design and development
+                    for clients anywhere in the US. Every line of code is
+                    written by hand to ensure the best performance, which helps
+                    bring in more customers to your site and bring more revenue
+                    to your business.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
                         <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port1.jpg"
-                            alt="new hallway"
+                            class="cs-icon"
                             loading="lazy"
-                            width="400"
-                            height="560"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/agency-layers.svg"
+                            alt="icon"
+                            width="48"
+                            height="48"
                         />
                     </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port4-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port4.jpg"
-                        />
+                    <h3 class="cs-h3">Full Development</h3>
+                    <p class="cs-item-text">
+                        Blanket term for a whole gamut of different holistic,
+                        non-medical, physical procedures aimed at helping you
+                        achieve
+                    </p>
+                    <a href="/" class="cs-link">
                         <img
-                            aria-hidden="true"
+                            class="cs-arrow"
                             decoding="async"
-                            src="/assets/images/portfolio/port4.jpg"
-                            alt="new home construction"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                            alt="arrow"
+                            width="413"
+                            height="374"
+                            aria-hidden="true"
+                        />
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
                             loading="lazy"
-                            width="400"
-                            height="560"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/agency-media.svg"
+                            alt="icon"
+                            width="48"
+                            height="48"
                         />
                     </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port7-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port7.jpg"
-                        />
+                    <h3 class="cs-h3">Media Strategy</h3>
+                    <p class="cs-item-text">
+                        Blanket term for a whole gamut of different holistic,
+                        non-medical, physical procedures aimed at helping you
+                        achieve
+                    </p>
+                    <a href="/" class="cs-link">
                         <img
-                            aria-hidden="true"
+                            class="cs-arrow"
                             decoding="async"
-                            src="/assets/images/portfolio/port7.jpg"
-                            alt="building a new wall"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                            alt="arrow"
+                            width="413"
+                            height="374"
+                            aria-hidden="true"
+                        />
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
                             loading="lazy"
-                            width="400"
-                            height="560"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/agency-alert.svg"
+                            alt="icon"
+                            width="48"
+                            height="48"
                         />
                     </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <picture class="cs-picture cs-picture1">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port2-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port2.jpg"
-                        />
+                    <h3 class="cs-h3">Effective Marketing</h3>
+                    <p class="cs-item-text">
+                        Blanket term for a whole gamut of different holistic,
+                        non-medical, physical procedures aimed at helping you
+                        achieve
+                    </p>
+                    <a href="/" class="cs-link">
                         <img
-                            aria-hidden="true"
+                            class="cs-arrow"
                             decoding="async"
-                            src="/assets/images/portfolio/port2.jpg"
-                            alt="new kitchen"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                            alt="arrow"
+                            width="413"
+                            height="374"
+                            aria-hidden="true"
+                        />
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
                             loading="lazy"
-                            width="400"
-                            height="560"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/agency-meter.svg"
+                            alt="icon"
+                            width="48"
+                            height="48"
                         />
                     </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port5-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port5.jpg"
-                        />
+                    <h3 class="cs-h3">SEO Optimization</h3>
+                    <p class="cs-item-text">
+                        Blanket term for a whole gamut of different holistic,
+                        non-medical, physical procedures aimed at helping you
+                        achieve
+                    </p>
+                    <a href="/" class="cs-link">
                         <img
-                            aria-hidden="true"
+                            class="cs-arrow"
                             decoding="async"
-                            src="/assets/images/portfolio/port5.jpg"
-                            alt="apartment addition"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                            alt="arrow"
+                            width="413"
+                            height="374"
+                            aria-hidden="true"
+                        />
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
                             loading="lazy"
-                            width="400"
-                            height="560"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/agency-design.svg"
+                            alt="icon"
+                            width="48"
+                            height="48"
                         />
                     </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port8-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port8.jpg"
-                        />
+                    <h3 class="cs-h3">UX / UI Design</h3>
+                    <p class="cs-item-text">
+                        Blanket term for a whole gamut of different holistic,
+                        non-medical, physical procedures aimed at helping you
+                        achieve
+                    </p>
+                    <a href="/" class="cs-link">
                         <img
-                            aria-hidden="true"
+                            class="cs-arrow"
                             decoding="async"
-                            src="/assets/images/portfolio/port8.jpg"
-                            alt="kew kitchen cabinets"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                            alt="arrow"
+                            width="413"
+                            height="374"
+                            aria-hidden="true"
+                        />
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <img
+                            class="cs-icon"
                             loading="lazy"
-                            width="400"
-                            height="560"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/agency-image.svg"
+                            alt="icon"
+                            width="48"
+                            height="48"
                         />
                     </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <picture class="cs-picture cs-picture1">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port3-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port3.jpg"
-                        />
+                    <h3 class="cs-h3">Photo and Print</h3>
+                    <p class="cs-item-text">
+                        Blanket term for a whole gamut of different holistic,
+                        non-medical, physical procedures aimed at helping you
+                        achieve
+                    </p>
+                    <a href="/" class="cs-link">
                         <img
-                            aria-hidden="true"
+                            class="cs-arrow"
                             decoding="async"
-                            src="/assets/images/portfolio/port3.jpg"
-                            alt="new kitchen"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port6-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port6.jpg"
-                        />
-                        <img
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                            alt="arrow"
+                            width="413"
+                            height="374"
                             aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port6.jpg"
-                            alt="apartment addition"
-                            loading="lazy"
-                            width="400"
-                            height="560"
                         />
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source
-                            media="(max-width: 600px)"
-                            srcset="/assets/images/portfolio/port9-m.jpg"
-                        />
-                        <source
-                            media="(min-width: 601px)"
-                            srcset="/assets/images/portfolio/port9.jpg"
-                        />
-                        <img
-                            aria-hidden="true"
-                            decoding="async"
-                            src="/assets/images/portfolio/port9.jpg"
-                            alt="kew kitchen cabinets"
-                            loading="lazy"
-                            width="400"
-                            height="560"
-                        />
-                    </picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+    <!-- ============================================ -->
+    <!--                 Why Choose Us                -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1662">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Process</span>
+                <h2 class="cs-title">
+                    Grow Your Business with Our New Bold Agency
+                </h2>
+            </div>
+            <div class="cs-wrapper">
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <span class="cs-item-number">01</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">Aqestic recusandae laudantium</h3>
+                            <p class="cs-item-text">
+                                Optio amet a quisquam saepe aliquid, voluptate
+                                praesentium dicta.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">02</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">
+                                Voluptatem eum cupiditate totam
+                            </h3>
+                            <p class="cs-item-text">
+                                Optio amet a quisquam saepe aliquid, voluptate
+                                praesentium dicta.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">03</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">
+                                Recusandae laudantium optio amet
+                            </h3>
+                            <p class="cs-item-text">
+                                Optio amet a quisquam saepe aliquid, voluptate
+                                praesentium dicta.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">04</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">Aqestic recusandae laudantium</h3>
+                            <p class="cs-item-text">
+                                Optio amet a quisquam saepe aliquid, voluptate
+                                praesentium dicta.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <span class="cs-item-number">05</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">
+                                Recusandae laudantium optio amet
+                            </h3>
+                            <p class="cs-item-text">
+                                Optio amet a quisquam saepe aliquid, voluptate
+                                praesentium dicta.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">06</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">Aqestic recusandae laudantium</h3>
+                            <p class="cs-item-text">
+                                Optio amet a quisquam saepe aliquid, voluptate
+                                praesentium dicta.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-item-number">07</span>
+                        <div class="cs-item-wrapper">
+                            <h3 class="cs-h3">
+                                Voluptatem eum cupiditate totam
+                            </h3>
+                            <p class="cs-item-text">
+                                Optio amet a quisquam saepe aliquid, voluptate
+                                praesentium dicta.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!---SVG Graphic-->
+            <img
+                class="cs-floater"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/diagnol-ovals.svg"
+                alt="graphic"
+                loading="lazy"
+                decoding="async"
+                height="710"
+                aria-hidden="true"
+                width="690"
+            />
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     CTA                      -->
+    <!-- ============================================ -->
+
+    <section id="cta-697">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">
+                    Have Doubts? Get Your Queries Solved by Our Experts
+                </h2>
+                <a href="" class="cs-button-solid">Get In Touch</a>
+            </div>
+        </div>
+        <!--SVG Waves Background-->
+        <img
+            class="cs-background"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fwaves-3.svg"
+            alt="wave graphic"
+            width="1920"
+            height="318"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+        />
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs-1373">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Performance</span>
+                <h2 class="cs-title">Web Design Company You Can Trust</h2>
+                <p class="cs-text">
+                    Our web design company specializes in the professional
+                    creation of unique sites. Our team constantly monitors the
+                    emergence of new technologies that we are not afraid to
+                    implement in web projects, making them modern and high-tech.
+                </p>
+                <div class="cs-content-flair">
+                    <div class="cs-bar">
+                        <h3 class="cs-h3">
+                            Savings Strategies
+                            <span class="cs-percentage">83%</span>
+                        </h3>
+                        <!--change the --progress number to match the percentage in cs-number-->
+                        <div class="cs-progress" aria-hidden="true">
+                            <span
+                                class="cs-progress-bar"
+                                style="--progress: 83%"
+                            ></span>
+                        </div>
+                    </div>
+                    <div class="cs-bar">
+                        <h3 class="cs-h3">
+                            Tax Planning
+                            <span class="cs-percentage">72%</span>
+                        </h3>
+                        <!--change the --progress number to match the percentage in cs-number-->
+                        <div class="cs-progress" aria-hidden="true">
+                            <span
+                                class="cs-progress-bar"
+                                style="--progress: 72%"
+                            ></span>
+                        </div>
+                    </div>
+                    <div class="cs-bar">
+                        <h3 class="cs-h3">
+                            Trusted Company
+                            <span class="cs-percentage">96%</span>
+                        </h3>
+                        <!--change the --progress number to match the percentage in cs-number-->
+                        <div class="cs-progress" aria-hidden="true">
+                            <span
+                                class="cs-progress-bar"
+                                style="--progress: 96%"
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="cs-button-solid">Contact Now</a>
+            </div>
+            <div class="cs-flex">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/cafe.jpg
+                        "
+                    />
+                    <!--Tablet and above Image-->
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/cafe.jpg
+                        "
+                    />
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/cafe.jpg"
+                        alt="person in cafe"
+                        width="414"
+                        height="627"
+                    />
+                </picture>
+                <div class="cs-review">
+                    <img
+                        class="cs-icon"
+                        loading="lazy"
+                        decoding="async"
+                        aria-hidden="true"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/oeange-quotes.svg"
+                        alt="appliance"
+                        width="120"
+                        height="99"
+                    />
+                    <p class="cs-review-text">
+                        Small businesses are the heartbeat of communities,
+                        embodying the spirit of entrepreneurship, determination,
+                        and local support.
+                    </p>
                 </div>
             </div>
-            <a href="/contact" class="cs-button-solid">Get Free Quote</a>
         </div>
     </section>
 
