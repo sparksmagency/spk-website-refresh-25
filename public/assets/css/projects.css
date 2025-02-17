@@ -86,172 +86,230 @@
     }
 
     /*-- -------------------------- -->
-<---            Hero            -->
+<---   HERO: Side By Side Reverse     -->
 <--- -------------------------- -*/
 
     /* Mobile - 360px */
     @media only screen and (min-width: 0rem) {
-        #hero-855 {
-            /* 116px - 164px top */
-            /* 60px - 100px  bottom */
-            padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem
-                clamp(3.75rem, 7.82vw, 6.25rem);
-            background-color: #f7f7f7;
-            /* clips the svg wave from overflowing */
+        #sbsr-2289 {
+            padding-top: 8rem !important;
+            padding: var(--sectionPadding);
             overflow: hidden;
-            position: relative;
-            z-index: 1;
         }
-        #hero-855 .cs-container {
+        #sbsr-2289 .cs-container {
             width: 100%;
-            max-width: 80rem;
+            /* changes to 1280px at desktop */
+            max-width: 36.5rem;
             margin: auto;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
             gap: 3rem;
         }
-        #hero-855 .cs-content {
-            max-width: 39.375rem;
+        #sbsr-2289 .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+            position: relative;
+            z-index: 10;
         }
-        #hero-855 .cs-topper {
+        #sbsr-2289 .cs-text {
+            margin-bottom: 1rem;
+        }
+        #sbsr-2289 .cs-text:last-of-type {
+            margin-bottom: 2rem;
+        }
+        #sbsr-2289 .cs-features {
+            width: 100%;
+            margin: 0 0 2rem;
+            /* 24px - 32px */
+            padding: clamp(1.5rem, 4vw, 2rem);
+            background-color: #fef5f4;
+            border-left: 0.25rem solid var(--secondary);
+        }
+        #sbsr-2289 .cs-h3 {
             font-size: 1rem;
-            line-height: 1.2em;
-            text-transform: uppercase;
-            text-align: inherit;
-            letter-spacing: 0.1em;
             font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.25rem;
-            display: block;
-        }
-        #hero-855 .cs-title {
-            /* 39px - 61px */
-            font-size: clamp(2.4375rem, 5vw, 3.8125rem);
-            font-weight: 900;
-            line-height: 1.2em;
-            text-align: center;
-            /* 23 characters including spaces wide */
-            max-width: 23ch;
-            margin: 0 0 1rem 0;
+            line-height: 1.5em;
+            margin: 0 0 0.75rem;
             color: var(--headerColor);
+        }
+        #sbsr-2289 .cs-ul {
+            font-size: 0.75rem;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        #sbsr-2289 .cs-li {
+            font-size: 1rem;
+            line-height: 1.5em;
+            list-style: none;
+            /* 20px - 24px */
+            padding-left: clamp(1.25rem, 3vw, 1.5rem);
+            color: var(--bodyTextColor);
             position: relative;
         }
-        #hero-855 .cs-text {
-            /* 16px - 20px */
-            font-size: clamp(1rem, 1.5vw, 1.25rem);
-            line-height: 1.5em;
-            text-align: center;
-            width: 100%;
-            max-width: 33.1875rem;
-            /* 28px - 40px */
-            margin: 0 0 clamp(1.75rem, 3.92vw, 2.5rem) 0;
-            color: var(--bodyTextColor);
+        #sbsr-2289 .cs-li::before {
+            content: "";
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-top: 0.5rem;
+            background-color: var(--secondary);
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(45deg);
         }
-        #hero-855 .cs-button-solid {
+        #sbsr-2289 .cs-button-solid {
             font-size: 1rem;
+            font-weight: 700;
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            text-decoration: none;
-            font-weight: 700;
             text-align: center;
-            margin: 0;
-            color: #fff;
+            text-decoration: none;
             min-width: 9.375rem;
+            margin: 0;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
             padding: 0 1.5rem;
             background-color: var(--primary);
-            border-radius: 0.25rem;
+            color: #1a1a1a;
             display: inline-block;
             position: relative;
             z-index: 1;
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
+            transition: color 0.3s;
         }
-        #hero-855 .cs-button-solid:before {
+        #sbsr-2289 .cs-button-solid:before {
             content: "";
-            position: absolute;
-            height: 100%;
             width: 0%;
+            height: 100%;
             background: #000;
             opacity: 1;
+            position: absolute;
             top: 0;
             left: 0;
             z-index: -1;
-            border-radius: 0.25rem;
             transition: width 0.3s;
         }
-        #hero-855 .cs-button-solid:hover:before {
+        #sbsr-2289 .cs-button-solid:hover {
+            color: #fff;
+        }
+        #sbsr-2289 .cs-button-solid:hover:before {
             width: 100%;
         }
-        #hero-855 .cs-picture {
+        #sbsr-2289 .cs-image-group {
             width: 100%;
-            max-width: 35.625rem;
-            /* 400px - 712px */
-            height: clamp(25rem, 95vw, 44.5rem);
-            /* 100px - 200px */
-            border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0
-                clamp(6.25rem, 17vw, 12.5rem);
-            box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.16);
-            /* clips the img tag corners */
-            overflow: hidden;
+            height: 126vw;
+            max-height: 39.125rem;
             display: block;
+            order: -1;
             position: relative;
+            z-index: 1;
         }
-        #hero-855 .cs-picture img {
+        #sbsr-2289 .cs-picture {
+            /* big background image */
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 5.9375rem;
+            left: 0;
+        }
+        #sbsr-2289 .cs-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             position: absolute;
             top: 0;
             left: 0;
-            height: 100%;
-            width: 100%;
-            /* makes image act as a background image */
-            object-fit: cover;
-            /* ensures the top of the images is at the top of the container, no heads getting cut off */
-            object-position: top;
         }
-        #hero-855 .cs-wave {
-            /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
-            width: 320%;
-            height: auto;
-            display: block;
+        #sbsr-2289 .cs-box {
+            text-align: left;
+            width: 91%;
+            max-width: 28.125rem;
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            /* 24px - 32px */
+            padding: clamp(1.5rem, 3vw, 2rem);
+            background-color: #fffcf3;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            column-gap: 1.5rem;
+            row-gap: 0.5rem;
             position: absolute;
+            right: 50%;
+            bottom: 0;
+            z-index: 10;
+            transform: translate(50%);
+        }
+        #sbsr-2289 .cs-number {
+            /* 31px - 49px */
+            font-size: clamp(1.9375rem, 4vw, 3.0625rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            text-transform: uppercase;
+            margin: 0;
+            color: var(--General-Secondary, #ffc219);
+        }
+        #sbsr-2289 .cs-heading {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.2em;
+            margin: 0 0 0.5rem;
+            color: var(--headerColor);
+        }
+        #sbsr-2289 .cs-desc {
+            font-size: 1rem;
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+        }
+        #sbsr-2289 .cs-graphic {
+            width: 150%;
+            height: auto;
+            position: absolute;
+            top: 50%;
             left: 50%;
-            bottom: -1px;
-            transform: translateX(-50%);
             z-index: -1;
+            transform: translate(-50%, -50%);
         }
     }
-    /* Small Desktop - 1024px */
-    @media only screen and (min-width: 64rem) {
-        #hero-855 {
-            text-align: left;
-        }
-        #hero-855 .cs-container {
+    /* Tablet - 768px */
+    @media only screen and (min-width: 48rem) {
+        #sbsr-2289 .cs-box {
             flex-direction: row;
-            justify-content: space-between;
+            align-items: center;
         }
-        #hero-855 .cs-content {
-            width: 40vw;
-            /* prevents flex-box from squishing it */
-            flex: none;
-            align-items: flex-start;
+    }
+    /* Desktop - 1024px */
+    @media only screen and (min-width: 64rem) {
+        #sbsr-2289 .cs-container {
+            max-width: 80rem;
+            flex-direction: row;
+            align-items: stretch;
+            gap: 1.25rem;
         }
-        #hero-855 .cs-title,
-        #hero-855 .cs-text {
-            text-align: left;
+        #sbsr-2289 .cs-content {
+            padding-right: 3.25rem;
+            padding-bottom: 6.75rem;
         }
-        #hero-855 .cs-picture {
-            /* 623px - 814px */
-            height: clamp(38.9375rem, 60vw, 50.875rem);
+        #sbsr-2289 .cs-image-group {
+            height: auto;
+            min-height: 40.125rem;
+            max-height: 100%;
+            order: initial;
         }
-        #hero-855 .cs-wave {
-            width: 100%;
-            left: 0;
-            transform: none;
+        #sbsr-2289 .cs-picture {
+            bottom: 4rem;
         }
     }
 

@@ -16,94 +16,170 @@ eleventyNavigation:
 
 {% block body %}
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                    Blog                      -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Blog</h1>
-        <picture>
-            <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/cabinets2-m.jpg"
-            />
-            <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/cabinets2.jpg"
-            />
-            <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/images/cabinets2.jpg"
-                alt="kitchen cabinets"
-                loading="eager"
-                width="2500"
-                height="1667"
-            />
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--              Main Blog Content               -->
-    <!-- ============================================ -->
-
-    <div class="blog-container main-content-wrapper">
-        <!--Main content -->
-        <div class="main-content">
-            <!-- ============================================ -->
-            <!--                 Blog Articles                -->
-            <!-- ============================================ -->
-
-            {% if collections.post | length == 0 %}
-                <h1>No Recent Posts</h1>
-            {% else %}
-                {%- for post in collections.post | reverse -%}
-                    <article class="recent-articles">
-                        <!--Main Article Image-->
-                        <picture class="blog-mainImage">
+    <section id="blog-1289">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex-group">
+                    <span class="cs-topper">Blog</span>
+                    <h2 class="cs-title">
+                        Our Latest Construction Insights and Trends
+                    </h2>
+                </div>
+                <p class="cs-text">
+                    Stay up-to-date with the latest news and updates from our
+                    construction company with our "Building a Better Future"
+                    news section. From project announcements to industry
+                    insights, we'll keep you informed on everything that's
+                    happening in the world of construction.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item cs-highlight">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building9.jpg
+                                "
+                            />
+                            <!--Tablet and above Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building9.jpg
+                                "
+                            />
                             <img
-                                src="{{ post.data.image }}"
-                                alt="{{ post.data.imageAlt }}"
-                                width="795"
-                                height="400"
+                                loading="lazy"
                                 decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building9.jpg"
+                                alt="building"
+                                width="270"
+                                height="200"
                             />
                         </picture>
-                        <!--Article Info-->
-                        <div class="article-group">
-                            <div class="blog-authorGroup">
-                                <!--Author Image-->
-                                <picture class="blog-author-img">
-                                    <img
-                                        src="/assets/svgs/profile.svg"
-                                        alt="house"
-                                        width="32"
-                                        height="32"
-                                        decoding="async"
-                                    />
-                                </picture>
-                                <span class="blog-author"
-                                    >{{ post.data.author }}</span
-                                >
-                                <span
-                                    aria-hidden="true"
-                                    class="blog-dot"
-                                ></span>
-                                <!--Blog Date-->
-                                <span class="blog-date"
-                                    >{{ post.date | postDate }}</span
-                                >
-                            </div>
-                            <h2 class="blog-h1">{{ post.data.title }}</h2>
-                            <p class="blog-desc">{{ post.data.description }}</p>
-                            <a href="{{ post.url }}" class="blog-link"
-                                >Continue Reading</a
-                            >
+                        <div class="cs-flex">
+                            <span class="cs-date">October 30, 2023</span>
+                            <h3 class="cs-h3">
+                                Constructing Dreams: Insights and Inspiration
+                                for Your Next Construction Project
+                            </h3>
+                            <p class="cs-item-text">
+                                Whether you're a homeowner looking to remodel
+                                your kitchen or a commercial developer planning
+                                a new project, we've got you covered. Our team
+                                of experts shares their knowledge and experience
+                                to help you make informed decisions and achieve
+                                your goals.
+                            </p>
                         </div>
-                    </article>
-                {%- endfor -%}
-            {% endif %}
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building10.jpg
+                                "
+                            />
+                            <!--Tablet and above Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building10.jpg
+                                "
+                            />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building10.jpg"
+                                alt="building"
+                                width="270"
+                                height="200"
+                            />
+                        </picture>
+                        <span class="cs-date">October 30, 2023</span>
+                        <h3 class="cs-h3">
+                            Building Strong Foundations: Expert Insights For the
+                            Construction Industry
+                        </h3>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building11.jpg
+                                "
+                            />
+                            <!--Tablet and above Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building11.jpg
+                                "
+                            />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building11.jpg"
+                                alt="building"
+                                width="270"
+                                height="200"
+                            />
+                        </picture>
+                        <span class="cs-date">October 30, 2023</span>
+                        <h3 class="cs-h3">
+                            Construction Chronicles: Stories of Creativity,
+                            Innovation, and Success in the Industry
+                        </h3>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building12.jpg
+                                "
+                            />
+                            <!--Tablet and above Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building12.jpg
+                                "
+                            />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building12.jpg"
+                                alt="building"
+                                width="270"
+                                height="200"
+                            />
+                        </picture>
+                        <span class="cs-date">October 30, 2023</span>
+                        <h3 class="cs-h3">
+                            Construction Connection: Building Strong
+                            Relationships in the Construction Industry
+                        </h3>
+                    </a>
+                </li>
+            </ul>
         </div>
-
-        {% include 'components/featured-post.html' %}
-    </div>
+    </section>
 {% endblock %}

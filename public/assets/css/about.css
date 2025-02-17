@@ -5,6 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #sbs {
+        padding-top: 8rem !important;
         padding: var(--sectionPadding);
     }
     #sbs .cs-container {
@@ -422,6 +423,7 @@
     /* Desktop - 768px */
     @media only screen and (min-width: 64em) {
         #RPsbsr-2278 {
+            padding-top: 10rem !important;
             padding: var(--sectionPadding);
             padding-top: 0;
         }
