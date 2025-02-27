@@ -176,7 +176,7 @@
     @media only screen and (min-width: 0rem) {
         #RPsbs-2278,
         #RPsbsr-2278 {
-            background-color: #f7f7f7;
+            /* background-color: #f7f7f7; */
             padding: var(--sectionPadding);
             /* clips the green background pseudo from overflowing the section */
             overflow: hidden;
