@@ -1373,10 +1373,12 @@
         display: block;
     }
     #cs-footer-487 .cs-icon {
+       
         width: 1.125rem;
         height: auto;
     }
     #cs-footer-487 .cs-arrow {
+        
         width: 0.4375rem;
         height: auto;
         display: block;
@@ -1480,7 +1482,7 @@
         /* 32px - 40px */
         width: clamp(2rem, 4vw, 2.5rem);
         height: clamp(2rem, 4vw, 2.5rem);
-        background-color: var(--secondary);
+        background-color: whitesmoke;
         border-radius: 50%;
         display: flex;
         justify-content: center;
