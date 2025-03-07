@@ -521,6 +521,21 @@
             color: var(--bodyTextColor);
             transition: color 0.3s;
         }
+
+        #faq-1582 .bullet-grid li{
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+            transition: color 0.3s;
+           
+        }
+
+        #faq-1582 .bullet-grid {
+            /* 14px - 16px */
+            padding-top: 1rem;
+        }
     }
     /* Tablet - 768px */
     @media only screen and (min-width: 48rem) {
