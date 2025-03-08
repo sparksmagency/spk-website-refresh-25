@@ -509,7 +509,8 @@
       box-sizing: border-box;
       overflow: hidden;
       padding: 0 1.5rem;
-      color: #fff;
+      
+      color: #400061;
       background-color: var(--primary);
       border-radius: 3rem;
       display: inline-block;
@@ -517,10 +518,12 @@
       z-index: 1;
   }
   #gallery-1374 .cs-button-solid:before {
+    
       content: "";
       width: 0%;
       height: 100%;
-      background: #000;
+      color: #fff !important;
+      background-color: #400061;
       opacity: 1;
       border-radius: 0.25rem;
       position: absolute;
@@ -528,10 +531,18 @@
       left: 0;
       z-index: -1;
       transition: width 0.3s;
+      
   }
+
   #gallery-1374 .cs-button-solid:hover:before {
       width: 100%;
+      
   }
+
+  #gallery-1374 .cs-button-solid:hover {
+    color: #fff; /* Change text color on hover */
+    /* background-color: #400061; Ensure the background changes to purple on hover */
+}
   #gallery-1374 .cs-bubbles {
       width: 25.9375rem;
       height: 34.125rem;
