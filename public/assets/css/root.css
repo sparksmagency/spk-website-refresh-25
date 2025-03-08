@@ -82,10 +82,11 @@
         content: "";
         opacity: 1;
         display: block;
-        background-color: #000;
+        background-color: #400061;
         height: 100%;
         width: 0;
         transition: width 0.3s;
+        border-radius: 8px;
     }
     .cs-hide-on-mobile {
         display: none;
