@@ -848,7 +848,7 @@
             height: 100%;
             /* 24px - 48px */
             border-radius: clamp(1.5rem, 4vw, 3rem);
-            background: var(--primary);
+            background: #353535;
             opacity: 0.1;
             position: absolute;
             display: block;
