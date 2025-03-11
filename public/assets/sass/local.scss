@@ -159,6 +159,51 @@
     }
 }
 
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs {
+            .cs-left {
+                &:before,
+                &:after {
+                    background: var(--accent);
+                }
+            }
+
+            .cs-picture2 {
+                /* 6px - 12px */
+                border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
+                background-color: var(--dark);
+            }
+
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-text,
+            .cs-h3,
+            .cs-flex-p,
+            .cs-name {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-flex-group {
+                background-color: var(--accent);
+            }
+
+            .cs-job {
+                opacity: 0.8;
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-quote-icon {
+                opacity: 0.2;
+            }
+        }
+    }
+}
+
 /*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
@@ -314,6 +359,50 @@
     }
 }
 
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs-r {
+            .cs-left {
+                &:before,
+                &:after {
+                    background: var(--accent);
+                }
+            }
+
+            .cs-picture2 {
+                /* 6px - 12px */
+                border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
+                background-color: var(--dark);
+            }
+
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-text,
+            .cs-h3,
+            .cs-flex-p,
+            .cs-name {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-flex-group {
+                background-color: var(--accent);
+            }
+
+            .cs-job {
+                opacity: 0.8;
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-quote-icon {
+                opacity: 0.2;
+            }
+        }
+    }
+}
 
 /*-- -------------------------- -->
 <---          Gallery           -->
@@ -468,6 +557,16 @@
     }
 }
 
+/* Dark mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #gallery {
+            .cs-title {
+                color: var(--bodyTextColorWhite);
+            }
+        }
+    }
+}
 
 /*-- -------------------------- -->
 <---          Reviews           -->
@@ -606,4 +705,24 @@
     }
 }
 
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #reviews {
+            .cs-title,
+            .cs-text,
+            .cs-item-p,
+            .cs-reviewer {
+                color: var(--bodyTextColorWhite);
+            }
 
+            .cs-item {
+                background: var(--medium);
+            }
+
+            .cs-desc {
+                color: var(--primaryLight);
+            }
+        }
+    }
+}

@@ -255,7 +255,18 @@
     }
 }
 
-
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #hero {
+            .cs-background {
+                &:before {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
 
 /*-- -------------------------- -->
 <---          Services          -->
@@ -347,4 +358,20 @@
     }
 }
 
+/* Dark mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #services {
+            background: var(--medium);
 
+            picture {
+                background: var(--primaryDark);
+            }
+
+            h2 {
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+    }
+}
