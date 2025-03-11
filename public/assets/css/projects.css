@@ -117,19 +117,24 @@
             align-items: flex-start;
             position: relative;
             z-index: 10;
+            
         }
         #sbsr-2289 .cs-text {
             margin-bottom: 1rem;
+            
         }
         #sbsr-2289 .cs-text:last-of-type {
             margin-bottom: 2rem;
+            
         }
         #sbsr-2289 .cs-features {
             width: 100%;
             margin: 0 0 2rem;
             /* 24px - 32px */
             padding: clamp(1.5rem, 4vw, 2rem);
-            background-color: #fef5f4;
+            background-color: #e2f6f4;
+            /* background-color: #f4fefd; */
+            
             border-left: 0.25rem solid var(--secondary);
         }
         #sbsr-2289 .cs-h3 {
@@ -239,7 +244,7 @@
             box-sizing: border-box;
             /* 24px - 32px */
             padding: clamp(1.5rem, 3vw, 2rem);
-            background-color: #fffcf3;
+            background-color: #e2f6f4;
             display: inline-flex;
             flex-direction: column;
             justify-content: center;
@@ -259,7 +264,7 @@
             line-height: 1.2em;
             text-transform: uppercase;
             margin: 0;
-            color: var(--General-Secondary, #ffc219);
+            color: var(--General-Secondary, #400061);
         }
         #sbsr-2289 .cs-heading {
             font-size: 1.25rem;
@@ -848,7 +853,7 @@
             height: 100%;
             /* 24px - 48px */
             border-radius: clamp(1.5rem, 4vw, 3rem);
-            background: #353535;
+            background: #b0afaf;
             opacity: 0.1;
             position: absolute;
             display: block;
@@ -859,7 +864,7 @@
             /* 80px - 120px */
             width: clamp(5rem, 10vw, 7.5rem);
             height: auto;
-            opacity: 0.3;
+            /* opacity: 0.3; */
             display: block;
         }
         #sbs-1373 .cs-review-text {
@@ -1453,6 +1458,7 @@
             flex-direction: column;
             position: relative;
             z-index: 1;
+            
         }
         #reviews-1395 .cs-item:before {
             /* background color */
@@ -1468,14 +1474,18 @@
             z-index: -1;
             /* prevents the mouse from interacting it */
             pointer-events: none;
+            
         }
         #reviews-1395 .cs-quote {
+            
             /* 72px - 120px */
             width: clamp(4.5rem, 10vw, 7.5rem);
             height: auto;
             /* 32px - 64px */
             margin-bottom: clamp(2rem, 6vw, 4rem);
             display: block;
+            opacity: 0.3 !important;
+           
         }
         #reviews-1395 .cs-item-text {
             /* 16px - 25px */
@@ -1517,6 +1527,7 @@
             width: 100%;
             /* makes the image behave like a background image */
             object-fit: cover;
+            
         }
         #reviews-1395 .cs-name {
             /* 16px - 25px */
@@ -1698,6 +1709,7 @@
         #steps-1376 .cs-icon {
             width: 2rem;
             height: auto;
+            opacity: 0.3 !important;
         }
         #steps-1376 .cs-h3 {
             font-size: 1.25rem;
