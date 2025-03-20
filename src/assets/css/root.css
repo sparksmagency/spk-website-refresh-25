@@ -1248,7 +1248,7 @@
   #cs-footer-487 {
     /* 48px - 64px */
     padding: clamp(3rem, 6vw, 4rem) 1rem;
-    background-color: var(--primary);
+    background-color: #1c1c1c;
   }
   #cs-footer-487 .cs-container {
     width: 100%;
