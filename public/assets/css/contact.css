@@ -275,8 +275,6 @@
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
-   
-    
   }
   #contact-1700 .cs-container {
     width: 100%;
@@ -307,11 +305,6 @@
   #contact-1700 .cs-topper {
     color: var(--secondary);
   }
-
-  #contact-1700 .desktop-content{
-    /* display: none; */
-  }
-
   #contact-1700 .cs-author {
     margin-top: 2.5rem;
     display: flex;
