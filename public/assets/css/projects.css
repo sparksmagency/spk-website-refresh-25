@@ -127,7 +127,7 @@
     margin: 0 0 2rem;
     /* 24px - 32px */
     padding: clamp(1.5rem, 4vw, 2rem);
-    background-color: #fef5f4;
+    background-color: #f4fefd;
     border-left: 0.25rem solid var(--secondary);
   }
   #sbsr-2289 .cs-h3 {
@@ -237,7 +237,7 @@
     box-sizing: border-box;
     /* 24px - 32px */
     padding: clamp(1.5rem, 3vw, 2rem);
-    background-color: #fffcf3;
+    background-color: #f4fefd;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -257,7 +257,7 @@
     line-height: 1.2em;
     text-transform: uppercase;
     margin: 0;
-    color: var(--General-Secondary, #ffc219);
+    color: #400061;
   }
   #sbsr-2289 .cs-heading {
     font-size: 1.25rem;
