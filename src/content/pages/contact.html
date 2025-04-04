@@ -17,12 +17,13 @@ eleventyNavigation:
      <style>
     /* Quiz Specific Styles */
     .quiz-container {
-        max-width: 800px;
+        width: 500px;
         margin: 2rem auto;
         padding: 2rem;
         background: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        height: 400px;
     }
 
     .progress-bar {
@@ -848,89 +849,38 @@ eleventyNavigation:
     <!-- ============================================ -->
        <!-- Add JavaScript at the bottom of the page -->
     <script>
-      // Updated JavaScript
-      document.addEventListener('DOMContentLoaded', function() {
+     document.addEventListener('DOMContentLoaded', function() {
     const steps = document.querySelectorAll('.step');
     const progressBar = document.querySelector('.progress');
+    const resultSection = document.querySelector('.result');
     let currentStep = 1;
-    const totalSteps = 7; // Explicitly set to 7 steps
+    const totalSteps = 7;
 
-    // Update progress bar
     function updateProgress() {
         const progress = ((currentStep - 1) / totalSteps) * 100;
         progressBar.style.width = `${progress}%`;
     }
 
-    // Show current step
     function showCurrentStep() {
         steps.forEach(step => {
-            const stepNumber = parseInt(step.dataset.step);
-            step.classList.toggle('active', stepNumber === currentStep);
+            step.classList.remove('active');
+            if (parseInt(step.dataset.step) === currentStep) {
+                step.classList.add('active');
+            }
         });
     }
 
-    // Validate current step
-    function validateCurrentStep() {
-        const currentStepElement = document.querySelector(`[data-step="${currentStep}"]`);
-        
-        if (currentStep <= 2 || currentStep === 5) {
-            // Radio button steps
-            const selected = currentStepElement.querySelector('input:checked');
-            return !!selected;
-        } else {
-            // Text input steps
-            const input = currentStepElement.querySelector('input');
-            return input.value.trim() !== '';
-        }
-    }
-
-    // Navigation handlers
     document.querySelectorAll('.next-btn').forEach(button => {
         button.addEventListener('click', (e) => {
             e.preventDefault();
-            if (!validateCurrentStep()) {
-                alert('Please complete the current step');
-                return;
-            }
             if (currentStep < totalSteps) {
                 currentStep++;
                 updateProgress();
                 showCurrentStep();
-            }
-        });
-    });
-
-    document.querySelectorAll('.prev-btn').forEach(button => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            if (currentStep > 1) {
-                currentStep--;
-                updateProgress();
-                showCurrentStep();
-            }
-        });
-    });
-
-    // Input validation triggers
-    document.querySelectorAll('input').forEach(input => {
-        input.addEventListener('input', () => {
-            if (input.type !== 'radio') {
-                const parentStep = input.closest('.step');
-                const stepNumber = parseInt(parentStep.dataset.step);
-                if (stepNumber === currentStep) {
-                    parentStep.querySelector('.next-btn').disabled = !validateCurrentStep();
-                }
-            }
-        });
-    });
-
-    // Radio button validation triggers
-    document.querySelectorAll('input[type="radio"]').forEach(radio => {
-        radio.addEventListener('change', () => {
-            const parentStep = radio.closest('.step');
-            const stepNumber = parseInt(parentStep.dataset.step);
-            if (stepNumber === currentStep) {
-                parentStep.querySelector('.next-btn').disabled = false;
+            } else if (currentStep === totalSteps) {
+                document.querySelectorAll('.step').forEach(s => s.remove());
+                resultSection.style.display = 'block';
+                progressBar.style.width = '100%';
             }
         });
     });
