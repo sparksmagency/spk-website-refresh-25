@@ -836,7 +836,6 @@
     width: 100%;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
-    
   }
   #services-1282 .cs-content {
     /* set text align to left if content needs to be left aligned */
@@ -846,7 +845,7 @@
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
-  
+    height: 500px;
   }
   #services-1282 .cs-flex-group {
     /* prevents flexbox from squishing it */
@@ -864,7 +863,6 @@
     justify-content: center;
     align-items: stretch;
     gap: 1.25rem;
-    height: 300px;
   }
   #services-1282 .cs-item {
     border-radius: 1rem;
