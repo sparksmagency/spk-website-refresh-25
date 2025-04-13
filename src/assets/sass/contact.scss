@@ -986,6 +986,7 @@
             width: 100%;
             /* 48px - 64px */
             gap: clamp(3rem, 6vw, 4rem);
+           
         }
 
         .cs-content {
@@ -996,6 +997,7 @@
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: flex-start;
+            height: 500px;
         }
 
         .cs-flex-group {

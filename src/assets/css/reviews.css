@@ -115,7 +115,7 @@
 @media only screen and (min-width: 0rem) {
   #content-1638 {
     padding-top: 8rem;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
     position: relative;
     z-index: 1;
   }
