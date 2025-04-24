@@ -759,6 +759,11 @@ eleventyNavigation:
         const steps = document.querySelectorAll('.step');
         const progressBar = document.querySelector('.progress');
         const resultSection = document.querySelector('.result');
+        const form = document.getElementById('cs-form-1700');
+    
+    // Attach the submit handler to the form
+    form.addEventListener('submit', handleSubmit);
+
         let currentStep = 1;
         const totalSteps = 7;
 
@@ -802,6 +807,8 @@ eleventyNavigation:
             }
     }
 
+    
+
         document.querySelectorAll('.next-btn').forEach(button => {
             button.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -820,6 +827,18 @@ eleventyNavigation:
         });
     });
 
+        // your existing “Previous” buttons
+        document.querySelectorAll('.prev-btn').forEach(button => {
+      button.addEventListener('click', e => {
+        e.preventDefault();
+        if (currentStep > 1) {
+          currentStep--;
+          updateProgress();
+          showCurrentStep();
+        }
+      });
+    });
+
     document.querySelectorAll('.options input[type="radio"]').forEach(radio => {
     radio.addEventListener('change', function() {
         const groupName = this.name;
@@ -831,6 +850,36 @@ eleventyNavigation:
         this.closest('.option').classList.add('selected');
     });
 });
+
+  // ** NEW: handle form submission via Fetch **
+  const handleSubmit = event => {
+      event.preventDefault();
+
+      // grab the very last piece of data from step 7
+      captureData(currentStep);
+
+      // package up every input you’ve filled
+      const formData = new FormData(form);
+
+      // send to Netlify (or your own endpoint) just like a normal form
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(() => {
+        // on success, show the “Thank You” screen
+        document.querySelectorAll('.step').forEach(s => s.remove());
+        progressBar.style.width = '100%';
+        resultSection.style.display = 'block';
+        console.log('Form successfully submitted');
+      })
+      .catch(error => alert(error));
+    };
+
+    // bind it!
+    form.addEventListener('submit', handleSubmit);
+
 
 
 document.querySelectorAll('.next-btn[type="button"]').forEach(button => {
@@ -844,5 +893,8 @@ document.querySelectorAll('.next-btn[type="button"]').forEach(button => {
         }
     });
 });
+
+  // Initialize
+  updateProgress(); showCurrentStep();
 </script>
 {% endblock %}
