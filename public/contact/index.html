@@ -223,6 +223,11 @@
         min-height: 120px;
     }
 
+    .options input[type="radio"] {
+    display: none;
+}
+
+
     .result {
         display: none;
         text-align: center;
@@ -588,7 +593,7 @@
 
                     <div class="step" data-step="3">
                         <h2>What’s your company name?</h2>
-                        <input placeholder="Company name" id="company-name" />
+                        <input placeholder="Company name" id="company-name" name="company-name"/>
                         <div class="buttons">
                             <button type="button" class="prev-btn">Previous</button>
                             <button type="button" class="next-btn">Next</button>
@@ -597,7 +602,7 @@
 
                     <div class="step" data-step="4">
                         <h2>What’s your company website?</h2>
-                        <input placeholder="company website" id="company-website" />
+                        <input placeholder="company website" id="company-website" name="company-website" />
                         <div class="buttons">
                             <button type="button" class="prev-btn">Previous</button>
                             <button type="button" class="next-btn">Next</button>
@@ -630,7 +635,7 @@
                     <!-- Step 2 -->
                     <div class="step" data-step="6">
                         <h2>Your Name:</h2>
-                        <input placeholder="Your name" id="user-name" />
+                        <input placeholder="Your name" id="user-name" name="user-name"  />
                         <div class="buttons">
                             <button type="button" class="prev-btn">Previous</button>
                             <button type="button" class="next-btn">Next</button>
@@ -639,7 +644,7 @@
 
                     <div class="step" data-step="7">
                         <h2>Your Phone Number:</h2>
-                        <input placeholder="Your phone" id="user-phone" />
+                        <input placeholder="Your phone" id="user-phone" name="user-phone" />
                         <div class="buttons">
                             <button type="button" class="prev-btn">Previous</button>
                             <button type="submit" class="next-btn">Next</button>
@@ -1119,6 +1124,18 @@
             });
         });
     });
+
+    document.querySelectorAll('.options input[type="radio"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+        const groupName = this.name;
+        // Remove 'selected' from all options in the group
+        document.querySelectorAll(`input[name="${groupName}"]`).forEach(otherRadio => {
+            otherRadio.closest('.option').classList.remove('selected');
+        });
+        // Add 'selected' to the clicked option
+        this.closest('.option').classList.add('selected');
+    });
+});
 </script>
 </main>
         <!-- ============================================ -->
