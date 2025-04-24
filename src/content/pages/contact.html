@@ -831,5 +831,18 @@ eleventyNavigation:
         this.closest('.option').classList.add('selected');
     });
 });
+
+
+document.querySelectorAll('.next-btn[type="button"]').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        captureData(currentStep);
+        if (currentStep < totalSteps) {
+            currentStep++;
+            updateProgress();
+            showCurrentStep();
+        }
+    });
+});
 </script>
 {% endblock %}
