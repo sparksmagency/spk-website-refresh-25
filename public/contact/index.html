@@ -1073,158 +1073,127 @@
 <!--                Closing CTA                  -->
 <!-- ============================================ -->
 <!-- Add JavaScript at the bottom of the page -->
+
+
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const quizData = {
-            goal: null,
-            challenge: null,
-            companyName: null,
-            companyWebsite: null,
-            size: null,
-            userName: null,
-            userPhone: null
-        }
-        const steps = document.querySelectorAll('.step');
-        const progressBar = document.querySelector('.progress');
-        const resultSection = document.querySelector('.result');
-        const form = document.getElementById('cs-form-1700');
+    document.addEventListener('DOMContentLoaded', () => {
+      const quizData = {
+        goal: null,
+        challenge: null,
+        companyName: null,
+        companyWebsite: null,
+        size: null,
+        userName: null,
+        userPhone: null   // note capital “P”
+      };
+      const steps        = Array.from(document.querySelectorAll('.step'));
+      const progressBar  = document.querySelector('.progress');
+      const resultSection= document.querySelector('.result');
+      const form         = document.getElementById('cs-form-1700');
     
-    // Attach the submit handler to the form
-    form.addEventListener('submit', handleSubmit);
-
-        let currentStep = 1;
-        const totalSteps = 7;
-
-        function updateProgress() {
-            const progress = ((currentStep - 1) / totalSteps) * 100;
-            progressBar.style.width = `${progress}%`;
-        }
-
-        function showCurrentStep() {
-            steps.forEach(step => {
-                step.classList.remove('active');
-                if (parseInt(step.dataset.step) === currentStep) {
-                    step.classList.add('active');
-                }
-            });
-        }
-
-        function captureData(step) {
-            switch (step) {
-                case 1:
-                quizData.goal = document.querySelector('input[name="goal"]:checked')?.value;
-                break;
-            case 2:
-                quizData.challenge = document.querySelector('input[name="challenge"]:checked')?.value;
-                break;
-                case 3:
-                quizData.companyName = document.getElementById('company-name').value;
-                break;
-                case 4:
-                quizData.companyWebsite = document.getElementById('company-website').value;
-                break;
-                case 5:
-                quizData.size = document.querySelector('input[name="size"]:checked')?.value;
-                break;
-                case 6:
-                quizData.userName = document.getElementById('user-name').value;
-                break;
-                case 7:
-                quizData.userphone = document.getElementById('user-phone').value;
-                break;
-            }
-    }
-
+      let currentStep = 1;
+      const totalSteps = steps.length; // or 7
     
-
-        document.querySelectorAll('.next-btn').forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                captureData(currentStep);
-                if (currentStep < totalSteps) {
-                    currentStep++;
-                    updateProgress();
-                    showCurrentStep();
-                } else if (currentStep === totalSteps) {
-                    document.querySelectorAll('.step').forEach(s => s.remove());
-                    resultSection.style.display = 'block';
-                    progressBar.style.width = '100%';
-                    console.log('Quiz Responses:', quizData);
-                }
-            });
-        });
-    });
-
-        // your existing “Previous” buttons
-        document.querySelectorAll('.prev-btn').forEach(button => {
-      button.addEventListener('click', e => {
-        e.preventDefault();
-        if (currentStep > 1) {
-          currentStep--;
-          updateProgress();
-          showCurrentStep();
+      function updateProgress() {
+        const pct = ((currentStep - 1) / totalSteps) * 100;
+        progressBar.style.width = pct + '%';
+      }
+    
+      function showCurrentStep() {
+        steps.forEach(s => s.classList.toggle('active', +s.dataset.step === currentStep));
+      }
+    
+      function captureData(step) {
+        switch (step) {
+          case 1:
+            quizData.goal = document.querySelector('input[name="goal"]:checked')?.value;
+            break;
+          case 2:
+            quizData.challenge = document.querySelector('input[name="challenge"]:checked')?.value;
+            break;
+          case 3:
+            quizData.companyName   = document.getElementById('company-name').value;
+            break;
+          case 4:
+            quizData.companyWebsite= document.getElementById('company-website').value;
+            break;
+          case 5:
+            quizData.size         = document.querySelector('input[name="size"]:checked')?.value;
+            break;
+          case 6:
+            quizData.userName     = document.getElementById('user-name').value;
+            break;
+          case 7:
+            quizData.userPhone    = document.getElementById('user-phone').value;
+            break;
         }
-      });
-    });
-
-    document.querySelectorAll('.options input[type="radio"]').forEach(radio => {
-    radio.addEventListener('change', function() {
-        const groupName = this.name;
-        // Remove 'selected' from all options in the group
-        document.querySelectorAll(`input[name="${groupName}"]`).forEach(otherRadio => {
-            otherRadio.closest('.option').classList.remove('selected');
-        });
-        // Add 'selected' to the clicked option
-        this.closest('.option').classList.add('selected');
-    });
-});
-
-  // ** NEW: handle form submission via Fetch **
-  const handleSubmit = event => {
-      event.preventDefault();
-
-      // grab the very last piece of data from step 7
-      captureData(currentStep);
-
-      // package up every input you’ve filled
-      const formData = new FormData(form);
-
-      // send to Netlify (or your own endpoint) just like a normal form
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString()
-      })
-      .then(() => {
-        // on success, show the “Thank You” screen
-        document.querySelectorAll('.step').forEach(s => s.remove());
-        progressBar.style.width = '100%';
-        resultSection.style.display = 'block';
-        console.log('Form successfully submitted');
-      })
-      .catch(error => alert(error));
-    };
-
-    // bind it!
-    form.addEventListener('submit', handleSubmit);
-
-
-
-document.querySelectorAll('.next-btn[type="button"]').forEach(button => {
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        captureData(currentStep);
-        if (currentStep < totalSteps) {
+      }
+    
+      // ——— Next buttons ———
+      document.querySelectorAll('.next-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.preventDefault();
+          captureData(currentStep);
+          if (currentStep < totalSteps) {
             currentStep++;
             updateProgress();
             showCurrentStep();
-        }
+          } else {
+            // Final step: show results (or trigger form submit)
+            steps.forEach(s => s.remove());
+            progressBar.style.width = '100%';
+            resultSection.style.display = 'block';
+            console.log('Quiz Responses:', quizData);
+          }
+        });
+      });
+    
+      // ——— Prev buttons ———
+      document.querySelectorAll('.prev-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.preventDefault();
+          if (currentStep > 1) {
+            currentStep--;
+            updateProgress();
+            showCurrentStep();
+          }
+        });
+      });
+    
+      // ——— Radio “selected” styling ———
+      document.querySelectorAll('.options input[type="radio"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+          document.querySelectorAll(`input[name="${this.name}"]`)
+            .forEach(r => r.closest('.option').classList.remove('selected'));
+          this.closest('.option').classList.add('selected');
+        });
+      });
+    
+      // ——— Form submit via Fetch ———
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        captureData(currentStep);         // grab last step data
+        const formData = new FormData(form);
+        fetch('/', {
+          method: 'POST',
+          headers: {'Content-Type':'application/x-www-form-urlencoded'},
+          body: new URLSearchParams(formData).toString()
+        })
+        .then(() => {
+          steps.forEach(s => s.remove());
+          progressBar.style.width = '100%';
+          resultSection.style.display = 'block';
+          console.log('Form successfully submitted');
+        })
+        .catch(err => alert(err));
+      });
+    
+      // ——— Init ———
+      updateProgress();
+      showCurrentStep();
     });
-});
-
-  // Initialize
-  updateProgress(); showCurrentStep();
-</script>
+    </script>
+    
 </main>
         <!-- ============================================ -->
 <!--                   Footer                     -->
