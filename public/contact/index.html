@@ -136,19 +136,29 @@
     margin-bottom: 1.5rem;
     padding: 0 0.5rem;
 
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+  
+  
+
     }
 
     .step.active {
         display: block;
+
     }
 
     .options {
+      
         margin: 1.5rem 0;
+        
     }
 
     .option {
         width: 100%;
     box-sizing: border-box;
+
+    
    
    
     font-size: 0.9rem;
@@ -160,6 +170,7 @@
         border-radius: 5px;
         cursor: pointer;
         transition: all 0.3s ease;
+        text-align: center;
     }
 
     .option.selected {
@@ -168,9 +179,14 @@
     }
 
     .buttons {
-        flex-direction: column;
+        /* flex-direction: column;
     gap: 0.5rem;
-    margin-top: 1.5rem;
+    margin-top: 1.5rem; */
+
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    gap: 1rem; /* Optional: Adds spacing between buttons */
+    margin-top: 1rem; /* Optional: Adds spacing from content above */
     
         /* display: flex;
         gap: 1rem;
@@ -202,6 +218,8 @@
         border-radius: 5px;
         cursor: pointer;
         font-weight: 500;
+       
+        
     }
 
     .next-btn {
