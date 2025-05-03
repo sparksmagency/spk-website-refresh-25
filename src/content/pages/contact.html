@@ -4,9 +4,9 @@ description: "Meta description for the page"
 preloadImg: "/assets/images/cabinets2.jpg"
 permalink: "contact/"
 eleventyNavigation:
-    key: Schedule a Call
-    order: 600
-    hideOnDesktop: true
+key: Schedule a Call
+order: 600
+hideOnDesktop: true
 ---
 
 {% extends "layouts/base.html" %}
@@ -20,12 +20,12 @@ eleventyNavigation:
 
     .quiz-container {
         width: 100%;
-    max-width: 100%;
-    padding: 1rem;
-    margin: 1rem auto;
-    box-sizing: border-box;
+        max-width: 100%;
+        padding: 1rem;
+        margin: 1rem auto;
+        box-sizing: border-box;
 
-     
+
         background: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -61,23 +61,24 @@ eleventyNavigation:
 
     .step {
         width: 100% !important;
-    height: auto;
-    min-height: 300px;
-    padding: 1rem;
-    box-sizing: border-box;
-    display: none;
+        height: auto;
+        min-height: 300px;
+        padding: 1rem;
+        box-sizing: border-box;
+        display: none;
     }
 
     .step h2 {
         font-size: 1.2rem;
-    line-height: 1.3;
-    margin-bottom: 1.5rem;
-    padding: 0 0.5rem;
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
 
-    display: flex;
-    justify-content: center; /* Centers buttons horizontally */
-  
-  
+        display: flex;
+        justify-content: center;
+        /* Centers buttons horizontally */
+
+
 
     }
 
@@ -87,19 +88,19 @@ eleventyNavigation:
     }
 
     .options {
-      
+
         margin: 1.5rem 0;
-        
+
     }
 
     .option {
         width: 100%;
-    box-sizing: border-box;
+        box-sizing: border-box;
 
-    
-   
-   
-    font-size: 0.9rem;
+
+
+
+        font-size: 0.9rem;
         padding: 1rem;
         display: block;
         /* padding: 1rem; */
@@ -121,11 +122,14 @@ eleventyNavigation:
     gap: 0.5rem;
     margin-top: 1.5rem; */
 
-    display: flex;
-    justify-content: center; /* Centers buttons horizontally */
-    gap: 1rem; /* Optional: Adds spacing between buttons */
-    margin-top: 1rem; /* Optional: Adds spacing from content above */
-    
+        display: flex;
+        justify-content: center;
+        /* Centers buttons horizontally */
+        gap: 1rem;
+        /* Optional: Adds spacing between buttons */
+        margin-top: 1rem;
+        /* Optional: Adds spacing from content above */
+
         /* display: flex;
         gap: 1rem;
         margin-top: 2rem; */
@@ -137,7 +141,7 @@ eleventyNavigation:
         /* display: block; */
 
         /* width: 100%; */
-        
+
         padding: 1rem;
         border: 2px solid #e2e8f0;
         border-radius: 8px;
@@ -156,8 +160,8 @@ eleventyNavigation:
         border-radius: 5px;
         cursor: pointer;
         font-weight: 500;
-       
-        
+
+
     }
 
     .next-btn {
@@ -180,8 +184,8 @@ eleventyNavigation:
     }
 
     .options input[type="radio"] {
-    display: none;
-}
+        display: none;
+    }
 
 
     .result {
@@ -245,18 +249,19 @@ eleventyNavigation:
         </div>
         <!--Form-->
 
-       
+
         <!-- ============================================ -->
         <!--                   QUIZ FORM                 -->
         <!-- ============================================ -->
 
-        <form class="cs-form" id="cs-form-1700" name="contactform" method="POST" data-netlify="true" netlify-honeypot="bot-field" >
+        <form class="cs-form" id="cs-form-1700" name="contact" method="POST" data-netlify="true"
+            netlify-honeypot="bot-field">
 
             <p class="hidden">
                 <label>
-                  Don’t fill this out if you’re human: <input name="bot-field" />
+                    Don’t fill this out if you’re human: <input name="bot-field" />
                 </label>
-              </p>
+            </p>
 
 
 
@@ -314,16 +319,16 @@ eleventyNavigation:
                             <button type="button" class="next-btn">Next</button>
                         </div>
                     </div>
-
+                    <!-- Step 3 -->
                     <div class="step" data-step="3">
                         <h2>What’s your company name?</h2>
-                        <input placeholder="Company name" id="company-name" name="company-name"/>
+                        <input placeholder="Company name" id="company-name" name="company-name" />
                         <div class="buttons">
                             <button type="button" class="prev-btn">Previous</button>
                             <button type="button" class="next-btn">Next</button>
                         </div>
                     </div>
-
+                    <!-- Step 4 -->
                     <div class="step" data-step="4">
                         <h2>What’s your company website?</h2>
                         <input placeholder="company website" id="company-website" name="company-website" />
@@ -356,16 +361,16 @@ eleventyNavigation:
                         </div>
                     </div>
 
-                    <!-- Step 2 -->
+                    <!-- Step 6 -->
                     <div class="step" data-step="6">
                         <h2>Your Name:</h2>
-                        <input placeholder="Your name" id="user-name" name="user-name"  />
+                        <input placeholder="Your name" id="user-name" name="user-name" />
                         <div class="buttons">
                             <button type="button" class="prev-btn">Previous</button>
                             <button type="button" class="next-btn">Next</button>
                         </div>
                     </div>
-
+                    <!-- Step 7 -->
                     <div class="step" data-step="7">
                         <h2>Your Phone Number:</h2>
                         <input placeholder="Your phone" id="user-phone" name="user-phone" />
@@ -778,105 +783,105 @@ eleventyNavigation:
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const quizData = {
-        goal: null,
-        challenge: null,
-        companyName: null,
-        companyWebsite: null,
-        size: null,
-        userName: null,
-        userPhone: null   // note capital “P”
-      };
-      const steps        = Array.from(document.querySelectorAll('.step'));
-      const progressBar  = document.querySelector('.progress');
-      const resultSection= document.querySelector('.result');
-      const form         = document.getElementById('cs-form-1700');
-    
-      let currentStep = 1;
-      const totalSteps = steps.length; // or 7
-    
-      function updateProgress() {
-        const pct = ((currentStep - 1) / totalSteps) * 100;
-        progressBar.style.width = pct + '%';
-      }
-    
-      function showCurrentStep() {
-        steps.forEach(s => s.classList.toggle('active', +s.dataset.step === currentStep));
-      }
-    
-      function captureData(step) {
-        switch (step) {
-          case 1:
-            quizData.goal = document.querySelector('input[name="goal"]:checked')?.value;
-            break;
-          case 2:
-            quizData.challenge = document.querySelector('input[name="challenge"]:checked')?.value;
-            break;
-          case 3:
-            quizData.companyName   = document.getElementById('company-name').value;
-            break;
-          case 4:
-            quizData.companyWebsite= document.getElementById('company-website').value;
-            break;
-          case 5:
-            quizData.size         = document.querySelector('input[name="size"]:checked')?.value;
-            break;
-          case 6:
-            quizData.userName     = document.getElementById('user-name').value;
-            break;
-          case 7:
-            quizData.userPhone    = document.getElementById('user-phone').value;
-            break;
+        const quizData = {
+            goal: null,
+            challenge: null,
+            companyName: null,
+            companyWebsite: null,
+            size: null,
+            userName: null,
+            userPhone: null   // note capital “P”
+        };
+        const steps = Array.from(document.querySelectorAll('.step'));
+        const progressBar = document.querySelector('.progress');
+        const resultSection = document.querySelector('.result');
+        const form = document.getElementById('cs-form-1700');
+
+        let currentStep = 1;
+        const totalSteps = steps.length; // or 7
+
+        function updateProgress() {
+            const pct = ((currentStep - 1) / totalSteps) * 100;
+            progressBar.style.width = pct + '%';
         }
-      }
-    
-      // ——— Next buttons ———
-      document.querySelectorAll('.next-btn').forEach(btn => {
-        btn.addEventListener('click', e => {
-          e.preventDefault();
-          captureData(currentStep);
-          if (currentStep < totalSteps) {
-            currentStep++;
-            updateProgress();
-            showCurrentStep();
-          } else {
-            // Final step: show results (or trigger form submit)
-            steps.forEach(s => s.remove());
-            progressBar.style.width = '100%';
-            resultSection.style.display = 'block';
-            console.log('Quiz Responses:', quizData);
-            form.submit();
-          }
+
+        function showCurrentStep() {
+            steps.forEach(s => s.classList.toggle('active', +s.dataset.step === currentStep));
+        }
+
+        function captureData(step) {
+            switch (step) {
+                case 1:
+                    quizData.goal = document.querySelector('input[name="goal"]:checked')?.value;
+                    break;
+                case 2:
+                    quizData.challenge = document.querySelector('input[name="challenge"]:checked')?.value;
+                    break;
+                case 3:
+                    quizData.companyName = document.getElementById('company-name').value;
+                    break;
+                case 4:
+                    quizData.companyWebsite = document.getElementById('company-website').value;
+                    break;
+                case 5:
+                    quizData.size = document.querySelector('input[name="size"]:checked')?.value;
+                    break;
+                case 6:
+                    quizData.userName = document.getElementById('user-name').value;
+                    break;
+                case 7:
+                    quizData.userPhone = document.getElementById('user-phone').value;
+                    break;
+            }
+        }
+
+        // ——— Next buttons ———
+        document.querySelectorAll('.next-btn').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault();
+                captureData(currentStep);
+                if (currentStep < totalSteps) {
+                    currentStep++;
+                    updateProgress();
+                    showCurrentStep();
+                } else {
+                    // Final step: show results (or trigger form submit)
+                    steps.forEach(s => s.remove());
+                    progressBar.style.width = '100%';
+                    resultSection.style.display = 'block';
+                    console.log('Quiz Responses:', quizData);
+                    form.submit();
+                }
+            });
         });
-      });
-    
-      // ——— Prev buttons ———
-      document.querySelectorAll('.prev-btn').forEach(btn => {
-        btn.addEventListener('click', e => {
-          e.preventDefault();
-          if (currentStep > 1) {
-            currentStep--;
-            updateProgress();
-            showCurrentStep();
-          }
+
+        // ——— Prev buttons ———
+        document.querySelectorAll('.prev-btn').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault();
+                if (currentStep > 1) {
+                    currentStep--;
+                    updateProgress();
+                    showCurrentStep();
+                }
+            });
         });
-      });
-    
-      // ——— Radio “selected” styling ———
-      document.querySelectorAll('.options input[type="radio"]').forEach(radio => {
-        radio.addEventListener('change', function() {
-          document.querySelectorAll(`input[name="${this.name}"]`)
-            .forEach(r => r.closest('.option').classList.remove('selected'));
-          this.closest('.option').classList.add('selected');
+
+        // ——— Radio “selected” styling ———
+        document.querySelectorAll('.options input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                document.querySelectorAll(`input[name="${this.name}"]`)
+                    .forEach(r => r.closest('.option').classList.remove('selected'));
+                this.closest('.option').classList.add('selected');
+            });
         });
-      });
-    
-     
-    
-      // ——— Init ———
-      updateProgress();
-      showCurrentStep();
+
+
+
+        // ——— Init ———
+        updateProgress();
+        showCurrentStep();
     });
-    </script>
-    
+</script>
+
 {% endblock %}
