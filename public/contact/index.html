@@ -555,7 +555,7 @@
         <!--                   QUIZ FORM                 -->
         <!-- ============================================ -->
 
-        <form class="cs-form" id="cs-form-1700" name="contactform" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact/">
+        <form class="cs-form" id="cs-form-1700" name="contactform" method="POST" data-netlify="true" netlify-honeypot="bot-field" >
 
             <p class="hidden">
                 <label>
@@ -1150,6 +1150,7 @@
             progressBar.style.width = '100%';
             resultSection.style.display = 'block';
             console.log('Quiz Responses:', quizData);
+            form.submit();
           }
         });
       });
