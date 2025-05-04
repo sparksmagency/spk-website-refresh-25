@@ -354,15 +354,15 @@ hideOnDesktop: true
                         <h2>What’s your company size?</h2>
                         <div class="options">
                             <label class="option">
-                                <input type="radio" name="size" value="brand-awareness">
+                                <input type="radio" name="size" value="1-5 employees (small)">
                                 1-5 employees
                             </label>
                             <label class="option">
-                                <input type="radio" name="size" value="lead-generation">
+                                <input type="radio" name="size" value="5-10 employees (medium)">
                                 5-10 employees
                             </label>
                             <label class="option">
-                                <input type="radio" name="size" value="customer-retention">
+                                <input type="radio" name="size" value="10+ employees (large)">
                                 10+ employees
                             </label>
                         </div>
@@ -800,8 +800,8 @@ hideOnDesktop: true
             companyName: null,
             companyWebsite: null,
             size: null,
-            userName: null,
-            userPhone: null   // note capital “P”
+            'user-name': null,
+            'user-phone': null   // note capital “P”
         };
         const steps = Array.from(document.querySelectorAll('.step'));
         const progressBar = document.querySelector('.progress');
