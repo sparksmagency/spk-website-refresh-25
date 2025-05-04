@@ -1139,7 +1139,7 @@
                     showCurrentStep();
                 } else {
                     // Final step: show results (or trigger form submit)
-                    steps.forEach(s => s.remove());
+                    steps.forEach(s => s.style.display = 'none');
                     progressBar.style.width = '100%';
                     resultSection.style.display = 'block';
                     console.log('Quiz Responses:', quizData);
