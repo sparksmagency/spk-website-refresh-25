@@ -1082,8 +1082,8 @@
         const quizData = {
             goal: null,
             challenge: null,
-            companyName: null,
-            companyWebsite: null,
+            "company-name": null,
+            "company-website": null,
             size: null,
             'user-name': null,
             'user-phone': null   // note capital “P”
@@ -1114,19 +1114,19 @@
                     quizData.challenge = document.querySelector('input[name="challenge"]:checked')?.value;
                     break;
                 case 3:
-                    quizData.companyName = document.getElementById('company-name').value;
+                    quizData["company-name"] = document.getElementById('company-name').value;
                     break;
                 case 4:
-                    quizData.companyWebsite = document.getElementById('company-website').value;
+                    quizData["company-website"] = document.getElementById('company-website').value;
                     break;
                 case 5:
                     quizData.size = document.querySelector('input[name="size"]:checked')?.value;
                     break;
                 case 6:
-                    quizData.userName = document.getElementById('user-name').value;
+                    quizData["user-name"] = document.getElementById('user-name').value;
                     break;
                 case 7:
-                    quizData.userPhone = document.getElementById('user-phone').value;
+                    quizData["user-phone"]= document.getElementById('user-phone').value;
                     break;
             }
         }
@@ -1146,7 +1146,7 @@
                     progressBar.style.width = '100%';
                     resultSection.style.display = 'block';
                     console.log('Quiz Responses:', quizData);
-                    document.getElementById('submission-title').value = quizData["company-name"];
+                    document.getElementById('submission-title').value = quizData["company-name"] || "No Company Name Provided";
                     form.submit();
                 }
             });
