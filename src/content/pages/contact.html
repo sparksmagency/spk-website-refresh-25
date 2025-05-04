@@ -267,12 +267,15 @@ hideOnDesktop: true
 
         <form class="cs-form" id="cs-form-1700" name="contact" method="POST" data-netlify="true"
             netlify-honeypot="bot-field">
-
+ <!-- Hidden honeypot field -->
             <p class="hidden">
                 <label>
                     Don’t fill this out if you’re human: <input name="bot-field" />
                 </label>
             </p>
+
+              <!-- Hidden field to force submission title -->
+  <input type="hidden" name="name" id="submission-title" value="Default Title">
 
 
 
@@ -861,6 +864,7 @@ hideOnDesktop: true
                     progressBar.style.width = '100%';
                     resultSection.style.display = 'block';
                     console.log('Quiz Responses:', quizData);
+                    document.getElementById('submission-title').value = quizData["company-name"];
                     form.submit();
                 }
             });
